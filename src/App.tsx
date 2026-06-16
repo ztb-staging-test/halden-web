@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchShipments } from "./api";
+import { KpiCards } from "./components/KpiCards";
 import { ShipmentTable } from "./components/ShipmentTable";
 import type { Shipment } from "./types";
 
@@ -22,6 +23,7 @@ export default function App() {
         <p className="sub">Live shipments across your carriers</p>
       </header>
       {error && <p className="error">Couldn't load shipments. {error}</p>}
+      <KpiCards shipments={shipments} />
       <ShipmentTable shipments={shipments} />
     </main>
   );
