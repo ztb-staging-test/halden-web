@@ -28,3 +28,4 @@ th { color: var(--muted); font-weight: 500; }
 .badge-in_transit, .badge-out_for_delivery { background: #e1ecff; color: var(--accent); }
 .error { color: #b42318; }
 .empty { color: var(--muted); }
+.filter { display: block; margin-bottom: 12px; color: var(--muted); font-size: 0.9rem; }
